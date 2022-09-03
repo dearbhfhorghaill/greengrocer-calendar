@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greengrocer Calendar</title>
+</head>
+<body>
+    {% if my_lovely_list %}
+        <ul>
+        {% for item in my_lovely_list %}
+            <li><a href="Item:">{{ item }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No items are available</p>
+    {% endif %}
+</body>
+</html>
